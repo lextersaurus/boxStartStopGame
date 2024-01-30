@@ -26,7 +26,7 @@ class Box {
 
 const box = new Box(30, 10, document.getElementById('box'), 1)
 
-button.addEventListener('click', () => {
+button.onclick = () => {
     if (button.style.backgroundColor == 'green') {
         button.style.backgroundColor = 'red'
         button.innerText = 'STOP'
@@ -36,4 +36,4 @@ button.addEventListener('click', () => {
         button.innerText = 'START'
         box.stop()
     }
-})
+}
